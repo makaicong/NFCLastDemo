@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/late_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="80sp"/>
+        <TextView
+            android:id="@+id/delay_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本月迟到次数"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/late_days"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:id="@+id/divideline"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@color/color_Snow2"/>
+
+        <TextView
+            android:id="@+id/holiday_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月请假次数"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_below="@+id/holiday_days"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/office_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月出差次数"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_below="@+id/office_days"
+            android:layout_marginRight="50dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

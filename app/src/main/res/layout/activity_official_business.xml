@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OfficialBusinessActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:text="手机号"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/official_phone"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@null"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="起始日期"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/official_begindate"
+            android:layout_width="230dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_next"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="结束日期"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/official_enddate"
+            android:layout_width="230dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_next"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <TextView
+        android:id="@+id/official_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="录入"
+        android:gravity="center"
+        android:background="@color/color_blue"
+        android:textColor="@color/colorWhite"/>
+
+    <!--<EditText
+        android:id="@+id/official_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="手机号" />
+    <EditText
+        android:id="@+id/official_begindate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="出差起始日期 Year-Month-Day" />
+    <EditText
+        android:id="@+id/official_enddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="出差结束日期 Year-Month-Day" />
+    <Button
+        android:id="@+id/official_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="录入"
+        android:layout_marginTop="100dp"/>-->
+
+</LinearLayout>

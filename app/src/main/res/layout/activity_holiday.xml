@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HolidayActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:text="手机号"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/holiday_phone"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@null"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="起始日期"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/holiday_begindate"
+            android:layout_width="230dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_next"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="结束日期"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/holiday_enddate"
+            android:layout_width="230dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_next"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="类型"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spin_holiday"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+
+    <TextView
+        android:id="@+id/holiday_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="录入"
+        android:gravity="center"
+        android:background="@color/color_blue"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

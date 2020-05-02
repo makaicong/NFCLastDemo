@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NFCLastDemo</string>
+    <string name="permission_cus_title">亲爱的上帝</string>
+    <string name="permission_cus_msg">请开启这个权限否则将无法收到验证短信</string>
+    <string name="permission_send_sms_phone">请允许发送短信</string>
+    <string name="permission_read_phone_state">允许读取手机状态</string>
+    <string name="str_login">登录</string>
+</resources>

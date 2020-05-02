@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ExportActivity">
+
+    <TextView
+        android:id="@+id/exceladdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:text="请选择部门"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spin_department"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:text="请选择年份"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spin_year"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:text="请选择月份"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spin_month"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_Snow2"/>
+
+    <TextView
+        android:id="@+id/expoernow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="导出"
+        android:gravity="center"
+        android:background="@color/color_blue"
+        android:textColor="@color/colorWhite"/>
+
+    <!--<Button
+        android:id="@+id/look_excel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="查看Excel表"
+        android:layout_marginTop="20dp"/>-->
+
+</LinearLayout>

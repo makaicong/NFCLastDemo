@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageActivity">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="添加员工信息"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/alter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="修改员工信息"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="请假"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/official_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="出差"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/employee_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="员工出勤"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="具体出勤情况"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/manage_boss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:text="设置管理员"
+        android:layout_marginTop="20dp"/>
+
+   <!-- <Spinner
+        android:layout_marginTop="20dp"
+        android:id="@+id/spin_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        />
+    <Spinner
+        android:layout_marginTop="40dp"
+        android:id="@+id/spin_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        />-->
+
+</LinearLayout>
