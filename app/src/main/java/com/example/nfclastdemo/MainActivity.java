@@ -1,12 +1,11 @@
 package com.example.nfclastdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.nfclastdemo.Util.Utils;
@@ -29,12 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //init();
         Bmob.initialize(this,"63aaf005c4526b638ae09aef38d16b56");
 
-        //Button button1 = (Button)findViewById(R.id.login);
-        Button button2 = (Button)findViewById(R.id.signin);
-        Button button3 = (Button)findViewById(R.id.manage);
-        //button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
+
+        ImageView imageView1 = findViewById(R.id.signin);
+        ImageView imageView2 = findViewById(R.id.manage);
+        imageView1.setOnClickListener(this);
+        imageView2.setOnClickListener(this);
 
     }
 
