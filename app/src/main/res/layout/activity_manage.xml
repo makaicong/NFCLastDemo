@@ -8,70 +8,137 @@
     android:orientation="vertical"
     tools:context=".ManageActivity">
 
-    <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="添加员工信息"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/alter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="修改员工信息"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/holiday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="请假"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/official_business"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="出差"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/employee_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="员工出勤"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/export"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="具体出勤情况"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/manage_boss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="invisible"
-        android:text="设置管理员"
-        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
 
-   <!-- <Spinner
-        android:layout_marginTop="20dp"
-        android:id="@+id/spin_year"
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/add"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:id="@+id/alter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/edit"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/holiday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/holiday"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="95dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加员工信息"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="修改员工信息"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="请假"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        />
-    <Spinner
-        android:layout_marginTop="40dp"
-        android:id="@+id/spin_month"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/official_business"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/business"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:id="@+id/employee_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/show_detail"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/export"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/analysis"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="95dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="出差"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="员工出勤"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="具体出勤情况"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        />-->
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/manage_boss"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/manager"
+            android:layout_marginLeft="40dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="95dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="设置管理员"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>
