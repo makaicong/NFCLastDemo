@@ -4,24 +4,13 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.Switch;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.nfclastdemo.Util.Utils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import yoworfid.usbreader;
 
@@ -46,13 +35,13 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent = getIntent();
         String isBoss = intent.getStringExtra("isBoss");
 
-        Button button1 = (Button)findViewById(R.id.add);
-        Button button2 = (Button)findViewById(R.id.alter);
-        Button button3 = (Button)findViewById(R.id.holiday);
-        Button button4 = (Button)findViewById(R.id.official_business);
-        Button button5 = (Button)findViewById(R.id.export);
-        Button button6 = (Button)findViewById(R.id.manage_boss);
-        Button button7 = (Button)findViewById(R.id.employee_detail);
+        ImageView button1 = findViewById(R.id.add);
+        ImageView button2 = findViewById(R.id.alter);
+        ImageView button3 = findViewById(R.id.holiday);
+        ImageView button4 = findViewById(R.id.official_business);
+        ImageView button5 = findViewById(R.id.export);
+        ImageView button6 = findViewById(R.id.manage_boss);
+        ImageView button7 = findViewById(R.id.employee_detail);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
