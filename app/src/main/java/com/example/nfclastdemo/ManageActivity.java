@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nfclastdemo.Util.Utils;
@@ -42,6 +43,7 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
         ImageView button5 = findViewById(R.id.export);
         ImageView button6 = findViewById(R.id.manage_boss);
         ImageView button7 = findViewById(R.id.employee_detail);
+        TextView textView = findViewById(R.id.manage_setting);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -54,6 +56,7 @@ public class ManageActivity extends AppCompatActivity implements View.OnClickLis
 
         if(isBoss.equals("1")){
             button6.setVisibility(View.VISIBLE);
+            textView.setVisibility(View.VISIBLE);
         }
 
     }

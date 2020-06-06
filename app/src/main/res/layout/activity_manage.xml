@@ -126,16 +126,19 @@
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
             android:src="@mipmap/manager"
+            android:visibility="invisible"
             android:layout_marginLeft="40dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_marginTop="95dp">
             <TextView
+                android:id="@+id/manage_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="设置管理员"
+                android:visibility="invisible"
                 android:layout_marginLeft="20dp"/>
         </RelativeLayout>
 

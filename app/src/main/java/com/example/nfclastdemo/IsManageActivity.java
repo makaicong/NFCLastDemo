@@ -85,24 +85,6 @@ public class IsManageActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    /*public void sendInfo(){
-        //final String phonenumber = editText1.getText().toString();
-        final String phonenumber = "18256516283";
-        BmobSMS.requestSMSCode(phonenumber,
-                "您的验证码是%smscode%，有效期为%ttl%分钟。您正在使用%appname%的验证码。", new QueryListener<Integer>() {
-                    @Override
-                    public void done(Integer integer, BmobException e) {
-                        if (e == null) {
-                            toast("发送验证码成功，短信ID：" );
-                            Log.e("aaaa","发送验证码成功，短信ID：");
-                        } else {
-                            toast("发送验证码失败：" );
-                            Log.e("aaaaa","发送验证码失败：" + e.getErrorCode() + "-" + e.getMessage());
-                        }
-                    }
-                });
-    }*/
-
     public void check(){
         final String phonenumber = editText1.getText().toString();
         final String passwordnum = editText2.getText().toString();
@@ -145,29 +127,6 @@ public class IsManageActivity extends AppCompatActivity implements View.OnClickL
                 }
             }
         });
-
-        /*final String sql = "select * from Employee where phone='"+phonenumber+"' and ismanage ='1'";
-        new BmobQuery<Employee>().doSQLQuery(sql, new SQLQueryListener<Employee>() {
-            @Override
-            public void done(BmobQueryResult<Employee> bmobQueryResult, BmobException e) {
-                if(e ==null){
-                    List<Employee> list = (List<Employee>) bmobQueryResult.getResults();
-                    if(list!=null && list.size()>0){
-                        //toast("此卡已注册" );
-                        toast("管理员你好");
-                        Intent intent1 = new Intent(IsManageActivity.this,ManageActivity.class);
-                        startActivity(intent1);
-                    }else{
-                        //Log.i("smile", "查询成功，无数据返回");
-                       toast("你不是管理员");
-                    }
-                }else{
-                    //Log.i("smile", "错误码："+e.getErrorCode()+"，错误描述："+e.getMessage());
-                    toast("查询失败" );
-
-                }
-            }
-        });*/
     }
 
 

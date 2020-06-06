@@ -146,10 +146,11 @@ public class Sign extends AppCompatActivity {
         hour=format(hour);
         minute=format(minute);
 
-        date=year+"-"+month+"-"+day;
+        //date=year+"-"+month+"-"+day;
         time=hour+"-"+minute;
 
-        final String sql = "select * from Attendence where employeeId='"+id+"' and date='"+date+"'" ;
+        //待修改+++++++++++++++++++++++++++++++++++
+        final String sql = "select * from Attendence where employeeId='"+id+"' and year='"+year+"' and month='"+month+"' and day='"+day+"'" ;
         //textView.setText(sql);
         new BmobQuery<Attendence>().doSQLQuery(sql, new SQLQueryListener<Attendence>() {
             @Override
@@ -161,7 +162,7 @@ public class Sign extends AppCompatActivity {
                         //toast("创建过了");
                         String ObjectID=list.get(0).getObjectId();
 
-                        if(hour1==11&&minute1<=30){
+                        if(hour1==11&&minute1<=30){//11  30
                             attendence.setMorning_out(time);
                             attendence.update(ObjectID, new UpdateListener() {
                                 @Override
@@ -174,7 +175,7 @@ public class Sign extends AppCompatActivity {
                                     }
                                 }
                             });
-                        }else if(hour1==14&&minute1<=30){
+                        }else if(hour1==14&&minute1<=30){//14  30
                             attendence.setAfternoon_in(time);
                             attendence.update(ObjectID, new UpdateListener() {
                                 @Override
@@ -187,7 +188,7 @@ public class Sign extends AppCompatActivity {
                                     }
                                 }
                             });
-                        }else if(hour1==18&&minute1<=30){
+                        }else if(hour1==18&&minute1<=30){//18  30
                             attendence.setAfternoon_out(time);
                             attendence.update(ObjectID, new UpdateListener() {
                                 @Override
@@ -214,7 +215,7 @@ public class Sign extends AppCompatActivity {
                         attendence.setYear(year);
                         attendence.setDay(day);
 
-                        if(hour1==14&&minute1<=60){
+                        if(hour1==07&&minute1<=30){//07 30
                             attendence.setAfternoon_in("");
                             attendence.setAfternoon_out("");
                             attendence.setMorning_in(time);
@@ -231,7 +232,7 @@ public class Sign extends AppCompatActivity {
                                     }
                                 }
                             });
-                        }else if(hour1==11&&minute1<=30){
+                        }else if(hour1==11&&minute1<=30){//11 30
                             attendence.setAfternoon_in("");
                             attendence.setAfternoon_out("");
                             attendence.setMorning_in("");
@@ -248,7 +249,7 @@ public class Sign extends AppCompatActivity {
                                     }
                                 }
                             });
-                        }else if(hour1==14&&minute1<=30){
+                        }else if(hour1==14&&minute1<=30){//14 30
                             attendence.setAfternoon_in(time);
                             attendence.setAfternoon_out("");
                             attendence.setMorning_in("");
@@ -265,7 +266,7 @@ public class Sign extends AppCompatActivity {
                                     }
                                 }
                             });
-                        }else if(hour1==18&&minute1<=30){
+                        }else if(hour1==18&&minute1<=30){//18 30
                             attendence.setAfternoon_in("");
                             attendence.setAfternoon_out(time);
                             attendence.setMorning_in("");
